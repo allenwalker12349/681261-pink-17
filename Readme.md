@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Стас Новиков](https://up.htmlacademy.ru/adaptive/17/user/681261).
-* Наставник: `Неизвестно`.
+* Наставник: Дмитрий Батманов
 
 ---
 
