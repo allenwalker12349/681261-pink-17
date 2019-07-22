@@ -3,54 +3,61 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
 
     <header class="page-header">
-      <a class="site-logo">
-        <img class="site-logo__img" src="#" alt="Проект Пинк">
-      </a>
-
-      <nav class="site-menu">
-        <button class="menu__toggle" type="button">Открыть меню</button>
-        <div class="menu__wrapper">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a class="menu__link menu__link--active">Главная</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Фотографии</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Конкурс</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">html academy</a>
-            </li>
-        </ul>
+      <div class="page-header__menu-container">
+        <div class="wrapper">
+          <a class="site-logo">
+            <img class="site-logo__img" src="img/logo-pink-white-mobile.svg" alt="Проект Пинк">
+          </a>
+          <button class="page-header__menu-toggle" type="button">Открыть меню</button>
         </div>
-      </nav>
+        <nav class="site-menu">
+          <div class="site-menu__wrapper">
+            <ul class="site-menu__list">
+              <li class="site-menu__item">
+                <a class="site-menu__link menu__link--active">Главная</a>
+              </li>
+              <li class="site-menu__item">
+                <a href="#" class="site-menu__link" href="photo.html">Фотографии</a>
+              </li>
+              <li class="site-menu__item">
+                <a href="#" class="site-menu__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="site-menu__item">
+                <a class="site-menu__link" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
 
       <h1 class="visually-hidden">Сайт фотоприложения для раскрашивания серых будней</h1>
       <section class="download">
-        <h2 class="visually-hidden">Скачайте приложение для своего устройства</h2>
-        <img class="menu__pic" src="http://placehold.it/150x100" alt="пример работы приложения">
-        <a class="button download__btn" href="#"></a>
-        <ul class="download__list">
-          <li class="download__item">
-            <a class="download__link download__link--appstore" href="#">Скачать из appstore</a>
-          </li>
-          <li class="download__item">
-            <a class="download__link download__link--playmarket" href="#">Скачать из playmarket</a>
-          </li>
-          <li class="download__item">
-            <a class="download__link download__link--widows" href="#">Скачать из магазина виндовс, который закрылся вроде как</a>
-          </li>
-        </ul>
-        <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="wrapper">
+          <h2 class="visually-hidden">Скачайте приложение для своего устройства</h2>
+          <img class="menu__pic visually-hidden" src="http://placehold.it/150x100" alt="пример работы приложения">
+          <a class="button download__btn" href="#">Скачать приложение</a>
+          <ul class="download__list">
+            <li class="download__item">
+              <a class="download__link download__link--appstore" href="#">Скачать из appstore</a>
+            </li>
+            <li class="download__item">
+              <a class="download__link download__link--playmarket" href="#">Скачать из playmarket</a>
+            </li>
+            <li class="download__item">
+              <a class="download__link download__link--widows" href="#">Скачать из магазина виндовс, который закрылся вроде как</a>
+            </li>
+          </ul>
+          <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </section>
 
       <section class="features">
