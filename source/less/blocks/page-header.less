@@ -3,10 +3,55 @@
   background-size: cover;
 }
 
+.page-header__menu-container .wrapper {
+  position: relative;
+}
+
 .page-header__menu-toggle {
-  display: none;
+  font-size: 0;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 23px;
+  height: 24px;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.page-header__menu-toggle:before, .page-header__menu-toggle:after {
+  position: absolute;
+  content: ' ';
+  height: 30px;
+  width: 3px;
+  background-color: #fff;
+}
+.page-header__menu-toggle:before {
+  transform: rotate(45deg);
+}
+.page-header__menu-toggle:after {
+  transform: rotate(-45deg);
 }
 
 .page-header__menu-container {
   background-color: @navy-blue;
+}
+
+.page-header__title-container {
+  background: url('../../img/bg-back-mobile@1x.jpg');
+}
+
+.page-header__title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  color: white;
+  padding: 26px 30px;
+  display: block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.page-header__hand-pic {
+  display: block;
 }
