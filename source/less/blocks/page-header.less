@@ -1,5 +1,5 @@
 .page-header {
-  background: url('../../img/bg-back-mobile@1x.jpg') no-repeat;
+  background: url("../../img/bg-back-mobile@1x.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -19,16 +19,19 @@
   cursor: pointer;
 }
 
-.page-header__menu-toggle:before, .page-header__menu-toggle:after {
+.page-header__menu-toggle::before,
+.page-header__menu-toggle::after {
   position: absolute;
   content: "";
   height: 30px;
   width: 3px;
   background-color: #ffffff;
 }
+
 .page-header__menu-toggle::before {
   transform: rotate(45deg);
 }
+
 .page-header__menu-toggle::after {
   transform: rotate(-45deg);
 }
@@ -38,7 +41,7 @@
 }
 
 .page-header__title-container {
-  background: url('../../img/bg-back-mobile@1x.jpg') no-repeat cover;
+  background: url("../../img/bg-back-mobile@1x.jpg") no-repeat cover;
 }
 
 .page-header__title {
