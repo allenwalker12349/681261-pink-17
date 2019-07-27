@@ -3,54 +3,63 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="page-header">
-      <a class="site-logo">
-        <img class="site-logo__img" src="#" alt="Проект Пинк">
-      </a>
-
-      <nav class="site-menu">
-        <button class="menu__toggle" type="button">Открыть меню</button>
-        <div class="menu__wrapper">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a class="menu__link menu__link--active">Главная</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Фотографии</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Конкурс</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">html academy</a>
-            </li>
-        </ul>
+      <div class="page-header__menu-container">
+        <div class="wrapper">
+          <a class="site-logo">
+            <img class="site-logo__img" src="img/logo-pink-white-mobile.svg" alt="Проект Пинк">
+          </a>
+          <button class="page-header__menu-toggle" type="button">Открыть меню</button>
         </div>
-      </nav>
+        <nav class="site-menu">
+          <div class="site-menu__wrapper">
+            <ul class="site-menu__list">
+              <li class="site-menu__item">
+                <a class="site-menu__link menu__link--active">Главная</a>
+              </li>
+              <li class="site-menu__item">
+                <a class="site-menu__link" href="photo.html">Фотографии</a>
+              </li>
+              <li class="site-menu__item">
+                <a class="site-menu__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="site-menu__item">
+                <a class="site-menu__link" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="page-header__title-container">
+        <span class="page-header__title">Взгляните на жизнь иначе!</span>
+        <img class="page-header__hand-pic" src="../../img/iphone-hand-mobile@1x.png" alt="пример работы приложения">
+      </div>
     </header>
 
     <main class="page-main">
 
       <h1 class="visually-hidden">Сайт фотоприложения для раскрашивания серых будней</h1>
       <section class="download">
-        <h2 class="visually-hidden">Скачайте приложение для своего устройства</h2>
-        <img class="menu__pic" src="http://placehold.it/150x100" alt="пример работы приложения">
-        <a class="button download__btn" href="#"></a>
-        <ul class="download__list">
-          <li class="download__item">
-            <a class="download__link download__link--appstore" href="#">Скачать из appstore</a>
-          </li>
-          <li class="download__item">
-            <a class="download__link download__link--playmarket" href="#">Скачать из playmarket</a>
-          </li>
-          <li class="download__item">
-            <a class="download__link download__link--widows" href="#">Скачать из магазина виндовс, который закрылся вроде как</a>
-          </li>
-        </ul>
-        <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="wrapper">
+          <h2 class="visually-hidden">Скачайте приложение для своего устройства</h2>
+          <a class="button download__btn" href="#">Скачать приложение</a>
+          <ul class="download__list">
+            <li class="download__item">
+              <a class="download__link download__link--appstore" href="#">Скачать из appstore</a>
+            </li>
+            <li class="download__item">
+              <a class="download__link download__link--playmarket" href="#">Скачать из playmarket</a>
+            </li>
+            <li class="download__item">
+              <a class="download__link download__link--widows" href="#">Скачать из магазина виндовс, который закрылся вроде как</a>
+            </li>
+          </ul>
+          <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </section>
 
       <section class="features">
@@ -60,27 +69,29 @@
           <span class="promo__item">Нам есть, что вам предложить!</span>
         </p>
         <ul class="features__list">
-          <li class="features__item">
-            <h3 class="features__title">Поднимает настроение</h3>
-            <p class="features__text">
-              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-            </p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__title">Меняет мир вокруг</h3>
-            <p class="features__text">
-              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-            </p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__title">Заводит новых друзей</h3>
-            <p class="features__text">
-              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-            </p>
-          </li>
-          <li class="features__item">
-            <img class="features__pic" src="http://placehold.it/150x100" alt="Всем привет">
-          </li>
+          <div class="wrapper">
+            <li class="features__item">
+              <h3 class="features__title">Поднимает настроение</h3>
+              <p class="features__text">
+                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+              </p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__title">Меняет мир вокруг</h3>
+              <p class="features__text">
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+              </p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__title">Заводит новых друзей</h3>
+              <p class="features__text">
+                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+              </p>
+            </li>
+            <li class="features__item">
+              <img class="features__pic" src="../../img/iphone-screen-mobile@1x.png" alt="Всем привет">
+            </li>
+          </div>
         </ul>
       </section>
 
