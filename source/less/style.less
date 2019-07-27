@@ -1,4 +1,3 @@
-@import "variables.less";
 @import "mixins.less";
 @import "blocks/wrapper.less";
 @import "blocks/page-header.less";
@@ -7,44 +6,32 @@
 @import "blocks/button.less";
 @import "blocks/download.less";
 @import "blocks/visually-hidden.less";
-@import "blocks/page-main.less";
 @import "blocks/promo.less";
 @import "blocks/features.less";
 @import "blocks/photo.less";
 @import "blocks/description.less";
 @import "blocks/developed.less";
 @import "blocks/social.less";
+@import "base.less";
 
-@font-face{
- font-family: "OpenSans";
- src: url(../fonts/opensans.woff2) format("woff2"),
-        url(../fonts/opensans.woff) format("woff");
- font-style:normal;
- font-weight:normal;
- }
-@font-face{
- font-family: "OpenSans";
- src: url(../fonts/opensansbold.woff2) format("woff2"),
-        url(../fonts/opensansbold.woff) format("woff");
- font-style:normal;
- font-weight:bold;
- }
- @font-face{
+@font-face {
+  font-family: "OpenSans";
+  src: url(../fonts/opensans.woff2) format("woff2"),
+  url(../fonts/opensans.woff) format("woff");
+  font-style:normal;
+  font-weight:normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url(../fonts/opensansbold.woff2) format("woff2"),
+  url(../fonts/opensansbold.woff) format("woff");
+  font-style:normal;
+  font-weight:bold;
+}
+@font-face {
   font-family: "OpenSans";
   src: url(../fonts/opensanslight.woff2) format("woff2"),
-         url(../fonts/opensanslight.woff) format("woff");
+  url(../fonts/opensanslight.woff) format("woff");
   font-style:normal;
   font-weight:300;
-  }
-
-body {
-  font-family: 'OpenSans', Arial, sans-serif;
-  margin: 0;
-  color: #283645;
-  font-size: 14px;
-  line-height: 1.7;
-}
-
-.page-header__menu-container .wrapper {
-  border-bottom: 1px solid black;
 }
