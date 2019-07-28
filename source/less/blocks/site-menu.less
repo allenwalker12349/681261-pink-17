@@ -1,25 +1,49 @@
-.site-menu {
-  background-color: #283645;
-}
-
 .site-menu__list {
   .list-normalize;
 }
 
 .site-menu__item {
-  padding: 15px 5px;
-  background-color: #283645;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000000;
 }
 
 .site-menu__link {
   .link-normalize;
-  text-transform: uppercase;
+  color: #ffffff;
   font-size: 18px;
   font-weight: bold;
-  line-height: 1.78em;
-  text-align: center;
-  color: #ffffff;
+  padding: 15px 20px;
+}
+
+@media (min-width: @tablet-width) {
+
+}
+
+@media (min-width: @desktop-width) {
+  .site-menu__item {
+    background-color: transparent;
+  }
+  .site-menu__link {
+    font-weight: normal;
+  }
+
+  .page-header__menu-container .wrapper {
+    justify-content: space-between;
+  }
+
+  .page-header__menu-toggle {
+    display: none;
+  }
+
+  .site-menu__item {
+
+  }
+
+  .site-menu__list {
+    display: flex;
+    justify-content: space-between;
+  }
 }
