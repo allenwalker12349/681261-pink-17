@@ -2,47 +2,52 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
-  <header class="page-header">
-    <div class="page-header__menu-container">
-      <div class="wrapper">
-        <a class="site-logo">
-          <img class="site-logo__img" src="img/logo-pink-white-mobile.svg" alt="Проект Пинк">
-        </a>
-        <button class="page-header__menu-toggle" type="button">Открыть меню</button>
-      </div>
-      <nav class="site-menu">
-        <div class="site-menu__wrapper">
-          <ul class="site-menu__list">
-            <li class="site-menu__item">
-              <a class="site-menu__link" href="index.html">Главная</a>
-            </li>
-            <li class="site-menu__item">
-              <a class="site-menu__link" href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-menu__item">
-              <a class="site-menu__link menu__link--active">Конкурс</a>
-            </li>
-            <li class="site-menu__item">
-              <a class="site-menu__link" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
-            </li>
-          </ul>
+    <header class="page-header">
+      <div class="page-header__menu-container">
+        <div class="wrapper">
+          <a class="page-header__logo">
+            <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
+          </a>
+          <button class="page-header__menu-toggle" type="button" name="button"></button>
+          <nav class="site-menu">
+            <ul class="site-menu__list">
+              <li class="site-menu__item">
+                <a class="site-menu__link" href="index.html">Главная</a>
+              </li>
+              <li class="site-menu__item">
+                <a class="site-menu__link" href="photo.html">Фотографии</a>
+              </li>
+              <li class="site-menu__item">
+                <a class="site-menu__link menu__link--active">Конкурс</a>
+              </li>
+              <li class="site-menu__item">
+                <a class="site-menu__link" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-      </nav>
-    </div>
-    <div class="page-header__title-container">
-      <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-    </div>
-  </header>
+      </div>
+    </header>
 
     <main class="page-main">
+      <section class="form">
+        <section class="intro intro--photo">
+          <div class="wrapper">
+            <h1 class="page-main__title page-main__title--photo">Конкурс на
+            самое безбашенное путешествие с Пинк</h1>
+          </div>
+        </section>
+      </section>
     </main>
 
-    <footer class="page-footer">
+
+    <footer class="page-footer wrapper">
       <a href="index.html" class="site-logo">
         <img class="site-logo__img site-logo__img--footer" src="../../img/logo-pink-blue-mobile.svg" alt="Проект Пинк">
       </a>
