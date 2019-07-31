@@ -2,6 +2,9 @@
   .list-normalize;
   background-color: #f2f2f2;
   padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
 }
 
 .features__item {
@@ -15,6 +18,8 @@
 
 .features__title {
   font-size: 18px;
+  line-height: 1em;
+  font-weight: bold;
 }
 
 .features__text {
@@ -22,7 +27,26 @@
   line-height: 1.7em;
 }
 
-.features__pic {
-  position: relative;
-  bottom: -45px;
+@media (min-width: @tablet-width) {
+  .features__item {
+    width: 300px;
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .features__title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .features__text {
+    font-size: 18px;
+    text-align: center;
+  }
 }

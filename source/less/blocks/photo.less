@@ -11,9 +11,43 @@
   width: 100%;
 }
 
-.photo__low {
-  max-width: 280px;
-  margin: 0 auto;
+.photo__description {
   background-color: #f2f2f2;
   padding: 20px 15px;
+  box-sizing: border-box;
+}
+
+.photo__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: @tablet-width) {
+  .photo__title {
+    font-size: 18px;
+  }
+
+  .photo__description {
+    width: 100%;
+  }
+
+  .photo__item {
+    width: 300px;
+  }
+
+  .photo__item--day-panoram {
+    width: 100%;
+  }
+
+  .photo__content-container .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo__item--day-panoram {
+    width: 100%;
+  }
 }

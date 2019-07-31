@@ -3,25 +3,34 @@
   background-size: cover;
 }
 
-.page-header__menu-container .wrapper {
-  position: relative;
+.page-header__menu-container {
+  background-color: #283645;
+}
+
+.page-header__logo {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px 5px;
 }
 
 .page-header__menu-toggle {
   font-size: 0;
-  position: absolute;
-  top: 5px;
-  right: 10px;
   width: 23px;
   height: 24px;
   border: 0;
   background-color: transparent;
-  cursor: pointer;
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .page-header__menu-toggle::before,
 .page-header__menu-toggle::after {
   position: absolute;
+  top: -4px;
+  left: 10px;
   content: "";
   height: 30px;
   width: 3px;
@@ -36,24 +45,8 @@
   transform: rotate(-45deg);
 }
 
-.page-header__menu-container {
-  background-color: #283645;
-}
-
-.page-header__title-container {
-  background: url("../../img/bg-back-mobile@1x.jpg") no-repeat cover;
-}
-
-.page-header__title {
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 300;
-  color: #ffffff;
-  padding: 26px 30px;
-  display: block;
-  text-align: center;
-}
-
-.page-header__hand-pic {
-  display: block;
+@media (min-width: @desktop-width) {
+  .page-header__menu-container .wrapper {
+    display: flex;
+  }
 }
