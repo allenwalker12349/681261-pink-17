@@ -1,6 +1,24 @@
+.page-footer--index {
+  display: none;
+}
+
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 280px;
+}
+
 @media (min-width: @tablet-width) {
   .page-footer {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    min-height: 130px;
   }
+}
+
+@media (min-width: @desktop-width) {
+  align-items: center;
+  min-height: 200px;
 }
