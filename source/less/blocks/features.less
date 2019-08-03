@@ -4,8 +4,8 @@
 
 .features__list {
   .list-normalize;
-  padding-top: 60px;
   position: relative;
+  padding-top: 60px;
 }
 
 .features__item {
@@ -14,21 +14,10 @@
   text-align: center;
 }
 
-.features__item img {
+.features__img {
   display: none;
-}
-
-.features__item:last-child {
-  position: relative;
-
-  &::after {
-    content: "";
-    display: block;
-    margin: 0 auto;
-    width: 160px;
-    height: 280px;
-    background: url("../../img/iphone-screen-mobile@1x.png") no-repeat;
-  }
+  width: 100%;
+  height: auto;
 }
 
 .features__title {
@@ -42,27 +31,38 @@
   line-height: 1.7em;
 }
 
-@media (min-width: @tablet-width) {
-  .features__item {
-    width: 300px;
-    margin-left: auto;
-    text-align: left;
+.features__wrapper {
+  &::after {
+    content: "";
+    display: block;
+    width: 160px;
+    height: 280px;
+    margin: 0 auto;
+    background: url("../../img/iphone-screen-mobile@1x.png") no-repeat;
   }
+}
 
-  .features__item:last-child {
-    padding-bottom: 0;
-    position: relative;
+@media (min-width: @tablet-width) {
+  .features__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
 
     &::after {
       content: "";
       display: block;
-      width: 280px;
-      height: 490px;
-      position: absolute;
-      left: -320px;
-      top: -306px;
+      width: 268px;
+      height: 461px;
+      margin: 0;
+      margin-top: auto;
+      margin-right: auto;
       background: url("../../img/iphone-screen-3-tablet@1x.png") no-repeat;
     }
+  }
+
+  .features__item {
+    width: 300px;
+    margin-left: auto;
+    text-align: left;
   }
 
   .features__list {
@@ -71,6 +71,14 @@
 }
 
 @media (min-width: @desktop-width) {
+  .features__wrapper {
+    justify-content: center;
+
+    &::after {
+      display: none;
+    }
+  }
+
   .features__list {
     display: flex;
     justify-content: space-around;
@@ -81,18 +89,8 @@
     margin: 0;
   }
 
-  .features__item img {
+  .features__img {
     display: block;
-  }
-
-  .features__item:last-child {
-    padding-bottom: 0;
-    position: relative;
-
-    &::after {
-      content: "";
-      display: none;
-    }
   }
 
   .features__title {

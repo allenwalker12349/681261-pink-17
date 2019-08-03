@@ -1,10 +1,10 @@
 .photo__title {
   margin: 50px 0;
+  text-align: center;
   color: #283645;
   font-size: 14px;
   line-height: 2em;
   font-weight: normal;
-  text-align: center;
 }
 
 .photo__pic {
@@ -14,10 +14,18 @@
 }
 
 .photo__description {
+  box-sizing: border-box;
   padding: 20px 15px;
   margin-bottom: 20px;
-  box-sizing: border-box;
   background-color: #f2f2f2;
+}
+
+.photo__description:first-child {
+  margin-bottom: 0;
+}
+
+.photo__wrapper {
+  margin-bottom: 20px;
 }
 
 .photo__item {
