@@ -12,9 +12,11 @@
 
 .site-menu__link {
   .link-normalize;
+  position: relative;
   padding: 20px 20px;
   color: #ffffff;
   font-size: 18px;
+  line-height: 18px;
   font-weight: bold;
 }
 
@@ -24,8 +26,8 @@
   }
 
   .site-menu__link {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 46px;
+    padding-bottom: 46px;
     font-weight: normal;
   }
 
@@ -37,9 +39,12 @@
     display: none;
   }
 
+  .site-menu {
+    display: flex;
+  }
+
   .site-menu__list {
     display: flex;
-    align-self: center;
     justify-content: space-between;
   }
 }

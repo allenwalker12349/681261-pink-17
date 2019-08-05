@@ -40,6 +40,13 @@
     margin: 0 auto;
     background: url("../../img/iphone-screen-mobile@1x.png") no-repeat;
   }
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    &::after {
+      background: url("../../img/iphone-screen-mobile@2x.png") no-repeat;
+      background-size: 160px 320px;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -56,6 +63,13 @@
       margin-top: auto;
       margin-right: auto;
       background: url("../../img/iphone-screen-3-tablet@1x.png") no-repeat;
+    }
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      &::after {
+        background: url("../../img/iphone-screen-3-tablet@2x.png") no-repeat;
+        background-size: 268px 461px;
+      }
     }
   }
 
