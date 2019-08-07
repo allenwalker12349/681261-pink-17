@@ -7,13 +7,18 @@
   font-weight: normal;
 }
 
+.photo__container {
+  display: flex;
+  width: 100%;
+}
+
 .photo__pic {
-  display: block;
   width: 100%;
   height: auto;
 }
 
 .photo__description {
+  width: 100%;
   box-sizing: border-box;
   padding: 20px 15px;
   margin-bottom: 20px;
@@ -42,22 +47,22 @@
     font-size: 18px;
   }
 
-  .photo__description {
-    width: 100%;
+  .photo__content-container .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .photo__item {
     width: 300px;
   }
 
-  .photo__item--day-panoram {
+  .photo__description {
     width: 100%;
   }
 
-  .photo__content-container .wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  .photo__item--day-panoram {
+    width: 100%;
   }
 }
 
