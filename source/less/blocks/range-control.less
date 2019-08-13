@@ -1,0 +1,44 @@
+.range-control {
+  position: absolute;
+  top: 85px;
+  display: none;
+}
+
+.range-control--crop {
+  display: block;
+}
+
+.range-control__bar {
+  position: relative;
+  width: 240px;
+  height: 2px;
+  background-color: #283645;
+}
+
+.range-control__toggle {
+  position: absolute;
+  top: -6px;
+  left: 190px;
+  box-sizing: border-box;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #d22856;
+
+  &:active {
+    background-color: #d22856;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .range-control {
+    top: 30px;
+    left: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .range-control {
+    width: 288px;
+  }
+}
