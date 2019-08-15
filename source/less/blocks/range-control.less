@@ -1,11 +1,12 @@
 .range-control {
-  position: absolute;
-  top: 85px;
   display: none;
+  position: absolute;
 }
 
 .range-control--crop {
+  position: absolute;
   display: block;
+  top: 80px;
 }
 
 .range-control__bar {
@@ -13,32 +14,59 @@
   width: 240px;
   height: 2px;
   background-color: #283645;
-}
 
-.range-control__toggle {
-  position: absolute;
-  top: -6px;
-  left: 190px;
-  box-sizing: border-box;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  border: 2px solid #d22856;
+  &::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 170px;
+    display: block;
+    box-sizing: border-box;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    border: 2px solid #d22856;
+  }
 
-  &:active {
+  &:active::after {
     background-color: #d22856;
   }
 }
 
+.range-control__toggle:hover::after {
+  background-color: #d22856;
+}
+
 @media (min-width: @tablet-width) {
+  .range-control__bar {
+    width: 202px;
+  }
+
   .range-control {
-    top: 30px;
-    left: 60px;
+    top: 35px;
+    left: 50px;
+  }
+
+  .range-control--crop {
+    top: inherit;
+  }
+
+  .range-control--fill {
+    display: block;
+  }
+
+  .range-control--contrast {
+    display: block;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .range-control {
+  .range-control__bar {
     width: 288px;
+  }
+
+  .range-control {
+    left: 93px;
   }
 }
