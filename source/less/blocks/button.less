@@ -22,10 +22,21 @@
 
 .button__cancel {
   width: 100%;
+  margin-bottom: 10px;
   box-sizing: border-box;
   border-color: #dddfe0;
   background-color: #f2f2f2;
   font-weight: bold;
   text-transform: uppercase;
   color: #dddfe0;
+}
+
+@media (min-width: @desktop-width) {
+  .button__add {
+    width: 180px;
+  }
+
+  .button__cancel {
+    width: 180px;
+  }
 }
