@@ -15,18 +15,18 @@ th {
 }
 
 .price-table td {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .price-table__invisible-cell {
-  border-width: 0px;
+  border-width: 0;
 }
 
 .price-table__head-line {
   padding-top: 25px;
   padding-bottom: 25px;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   background-color: #283645;
 }
 
@@ -54,7 +54,7 @@ th {
   &::before {
     position: absolute;
     top: 29px;
-    left: 235px;;
+    left: 235px;
     content: "";
     width: 15px;
     height: 4px;
@@ -121,7 +121,7 @@ th {
   }
 
   .price-table th {
-    padding: 16px;
+    padding: 13px;
   }
 
   .price-table__head-line span {
@@ -145,16 +145,11 @@ th {
     }
   }
 
-  .price-table th {
-    padding: 13px;
-  }
-
   .price-table td {
     padding: 10px;
   }
 
   .price-table__check {
-
     &::after {
       position: absolute;
       top: 21px;
@@ -179,7 +174,6 @@ th {
   }
 
   .price-table__uncheck {
-
     &::after {
       top: 45%;
       left: 40%;
@@ -198,7 +192,6 @@ th {
 
 @media (min-width: @desktop-width) {
   .price-table__check {
-
     &::after {
       top: 21px;
       left: 104px;
