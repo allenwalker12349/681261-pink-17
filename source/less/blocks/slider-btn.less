@@ -1,0 +1,42 @@
+.slider__btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider__btn {
+  position: relative;
+  display: block;
+  margin-right: 20px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #bec2c7;
+  &::after {
+    position: absolute;
+    left: -3px;
+    top: -3px;
+    display: none;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border: solid 3px #283645;
+    border-radius: 50%;
+  }
+}
+
+.slider__radio:checked + .slider__btn::after {
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .slider__btn-container--price {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider__btn-container {
+    display: none;
+  }
+}

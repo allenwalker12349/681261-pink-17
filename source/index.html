@@ -147,14 +147,80 @@
             на привычные серые вещи! А еще я познакомился со своей будущей женой
             в комментариях к выложенной фотографии!»
           </p>
-          <div class="review__btn-container">
-            <input class="reivew__radio visually-hidden" type="radio" name="slider-dot" value="" id="slider-first" checked>
-            <label class="reivew__btn reivew__btn--current" for="slider-first"></label>
-            <input class="reivew__radio visually-hidden" type="radio" name="slider-dot" value="" id="slider-second">
-            <label class="reivew__btn" for="slider-second"></label>
-            <input class="reivew__radio visually-hidden" type="radio" name="slider-dot" value="" id="slider-third">
-            <label class="reivew__btn" for="slider-third"></label>
-          </div>
+          <form class="slider__btn-container" action="index.html" method="post">
+            <input class="slider__radio visually-hidden" type="radio" name="slider-dot" value="" id="slider-first" checked>
+            <label class="slider__btn slider__btn--current" for="slider-first"></label>
+            <input class="slider__radio visually-hidden" type="radio" name="slider-dot" value="" id="slider-second">
+            <label class="slider__btn" for="slider-second"></label>
+            <input class="slider__radio visually-hidden" type="radio" name="slider-dot" value="" id="slider-third">
+            <label class="slider__btn" for="slider-third"></label>
+          </form>
+        </div>
+      </section>
+
+      <section class="price">
+        <div class="wrapper price__wrapper">
+          <table class="price-table">
+            <tr>
+              <th class="price-table__invisible-cell visually-hidden"></th>
+              <th class="price-table__head-line">
+                <b>База</b>
+                <span>1,99 usd</span>
+              </th>
+              <th class="price-table__head-line price-table__head-line--hit">
+                <b>Стандарт</b>
+                <span>3,99 usd</span>
+              </th>
+              <th class="price-table__head-line">
+                <b>Анлим</b>
+                <span>9,99 usd</span>
+              </th>
+            </tr>
+             <tr>
+              <td>Розовый фильтр</td>
+              <td class="price-table__check">
+                <span class="price-table__hidden-text">Розовый фильтр</span>
+              </td>
+              <td class="price-table__check">
+                <span class="price-table__hidden-text">Розовый фильтр</span>
+              </td>
+              <td class="price-table__check">
+                <span class="price-table__hidden-text">Розовый фильтр</span>
+              </td>
+             </tr>
+            <tr>
+              <td>Смайлики</td>
+              <td class="price-table__uncheck">
+                <span class="price-table__hidden-text">Смайлики</span>
+              </td>
+              <td class="price-table__check">
+                <span class="price-table__hidden-text">Смайлики</span>
+              </td>
+              <td class="price-table__check">
+                <span class="price-table__hidden-text">Смайлики</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Комментарии</td>
+              <td class="price-table__uncheck">
+                <span class="price-table__hidden-text">Комментарии</span>
+              </td>
+              <td class="price-table__uncheck">
+                <span class="price-table__hidden-text">Комментарии</span>
+              </td>
+              <td class="price-table__check">
+                <span class="price-table__hidden-text">Комментарии</span>
+              </td>
+            </tr>
+          </table>
+          <form class="slider__btn-container slider__btn-container--price" action="index.html" method="post">
+            <input class="slider__radio visually-hidden" type="radio" name="slider-dot" value="" id="slider-price-first" checked>
+            <label class="slider__btn slider__btn--current" for="slider-price-first"></label>
+            <input class="slider__radio visually-hidden" type="radio" name="slider-dot" value="" id="slider-price-second">
+            <label class="slider__btn" for="slider-price-second"></label>
+            <input class="slider__radio visually-hidden" type="radio" name="slider-dot" value="" id="slider-price-third">
+            <label class="slider__btn" for="slider-price-third"></label>
+          </form>
         </div>
       </section>
 

@@ -1,0 +1,212 @@
+.price-table {
+  position: relative;
+  left: -572px;
+  width: 1140px;
+  border-collapse: collapse;
+  font-family: inherit;
+  font-size: 18px;
+}
+
+.price-table td,
+th {
+  width: 25%;
+  padding: 17px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #e5e5e5;
+}
+
+.price-table td {
+  background-color: #fff;
+}
+
+.price-table__invisible-cell {
+  border-width: 0px;
+}
+
+.price-table__head-line {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #283645;
+}
+
+.price-table__head-line span {
+  display: block;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.price-table__check {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 25px;
+    left: 242px;
+    content: "";
+    width: 30px;
+    height: 4px;
+    background-color: #3dc644;
+    transform: rotate(-45deg);
+  }
+
+  &::before {
+    position: absolute;
+    top: 29px;
+    left: 235px;;
+    content: "";
+    width: 15px;
+    height: 4px;
+    background-color: #3dc644;
+    transform: rotate(45deg);
+  }
+}
+
+.price-table__uncheck {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 45%;
+    left: 82%;
+    content: "";
+    width: 33px;
+    height: 4px;
+    background-color: #f25b26;
+    transform: rotate(-45deg);
+  }
+
+  &::before {
+    position: absolute;
+    top: 45%;
+    left: 82%;
+    content: "";
+    width: 33px;
+    height: 4px;
+    background-color: #f25b26;
+    transform: rotate(45deg);
+  }
+}
+
+.price-table__head-line--hit {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 74px;
+    height: 74px;
+    content: url("../../img/bg-hit.svg");
+  }
+
+  &::after {
+    position: absolute;
+    top: 15px;
+    left: 13px;
+    transform: rotate(-45deg);
+    content: "ХИТ";
+    font-size: 14px;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .price-table {
+    position: static;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .price-table th {
+    padding: 16px;
+  }
+
+  .price-table__head-line span {
+    font-size: 18px;
+  }
+
+  .price-table__head-line--hit {
+    position: relative;
+
+    &::before {
+      left: -7px;
+      content: url("../../img/bg-hit-tablet.svg");
+    }
+
+    &::after {
+      top: 8px;
+      left: 8px;
+      content: "ХИТ";
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+
+  .price-table th {
+    padding: 13px;
+  }
+
+  .price-table td {
+    padding: 10px;
+  }
+
+  .price-table__check {
+
+    &::after {
+      position: absolute;
+      top: 21px;
+      left: 70px;
+      content: "";
+      width: 30px;
+      height: 4px;
+      background-color: #3dc644;
+      transform: rotate(-45deg);
+    }
+
+    &::before {
+      position: absolute;
+      top: 25px;
+      left: 63px;
+      content: "";
+      width: 15px;
+      height: 4px;
+      background-color: #3dc644;
+      transform: rotate(45deg);
+    }
+  }
+
+  .price-table__uncheck {
+
+    &::after {
+      top: 45%;
+      left: 40%;
+    }
+
+    &::before {
+      top: 45%;
+      left: 40%;
+    }
+  }
+
+  .price-table__hidden-text {
+    font-size: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .price-table__check {
+
+    &::after {
+      top: 21px;
+      left: 104px;
+    }
+
+    &::before {
+      top: 25px;
+      left: 97px;
+    }
+  }
+}

@@ -16,37 +16,6 @@
   display: none;
 }
 
-.review__btn-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.reivew__btn {
-  position: relative;
-  display: block;
-  margin-right: 20px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: #bec2c7;
-  &::after {
-    position: absolute;
-    left: -3px;
-    top: -3px;
-    display: none;
-    content: "";
-    width: 6px;
-    height: 6px;
-    border: solid 3px #283645;
-    border-radius: 50%;
-  }
-}
-
-.reivew__radio:checked + .reivew__btn::after {
-  display: block;
-}
-
 .reivew__icon-quote {
   display: none;
   align-self: center;
@@ -63,7 +32,7 @@
   padding: 0;
   display: none;
   width: 22px;
-  height: 42px;
+  height: 41px;
   border: 0;
   background-color: transparent;
   opacity: 0.3;
@@ -127,10 +96,6 @@
 
   .reivew__icon-quote {
     display: block;
-  }
-
-  .review__btn-container {
-    display: none;
   }
 
   .reivew__arrow {
