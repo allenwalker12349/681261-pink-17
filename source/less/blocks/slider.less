@@ -1,4 +1,5 @@
 .slider__btn-container {
+  margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,6 +14,14 @@
   border-radius: 50%;
   background-color: #bec2c7;
 
+  &:hover {
+    background-color: #7e868f;
+  }
+
+  &:active {
+    background-color: #e9ebec;
+  }
+
   &::after {
     position: absolute;
     left: -3px;
@@ -24,6 +33,10 @@
     border: solid 3px #283645;
     border-radius: 50%;
   }
+}
+
+.slider__radio:checked + .slider__btn {
+  background-color: #ffffff;
 }
 
 .slider__radio:checked + .slider__btn::after {

@@ -26,6 +26,10 @@
   opacity: 1;
 }
 
+.post__icon:hover * {
+  opacity: 0.7;
+}
+
 .post__control-item {
   position: relative;
   display: flex;
@@ -50,6 +54,13 @@
 @media (min-width: @tablet-width) {
   .post__line {
     display: none;
+  }
+
+  .post__icon path:not(:first-child),
+  .post__icon rect,
+  .post__icon--contrast path {
+    fill: #d22856;
+    opacity: 1;
   }
 
   .post__wrapper {
@@ -98,6 +109,12 @@
   .post__icon {
     width: 44px;
     height: 44px;
+  }
+
+  .post__icon--contrast {
+    width: 33px;
+    height: 33px;
+    padding-left: 5px;
   }
 
   .post__wrapper {
