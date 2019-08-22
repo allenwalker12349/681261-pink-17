@@ -40,10 +40,10 @@
 
 .contacts__map {
   min-height: 200px;
-  background: url("../../img/bg-map-mobile@1x.jpg");
+  background-image: url("../../img/bg-triangle-white-footer.svg"), url("../../img/bg-map-mobile@2x.jpg");
+  background-position: top, bottom;
+  background-size: contain, cover;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../../img/bg-triangle-white-footer.svg"), url("../../img/bg-map-mobile@2x.jpg");
@@ -67,9 +67,9 @@
 
   .contacts__map {
     min-height: 375px;
-    background: url("../../img/bg-map-tablet@1x.jpg");
-    background-size: cover;
-    background-position: 0 72%;
+    background-image: url("../../img/bg-triangle-white-footer.svg"), url("../../img/bg-map-tablet@1x.jpg");
+    background-position: top, 0 72%;
+    background-size: contain, cover;
     background-repeat: no-repeat;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -93,10 +93,10 @@
 
   .contacts__map {
     min-height: 520px;
-    background: url("../../img/bg-map-desktop@1x.jpg");
-    background-size: cover;
+    background-image: url("../../img/bg-triangle-white-footer.svg"), url("../../img/bg-map-desktop@1x.jpg");
+    background-size: contain, cover;
     background-repeat: no-repeat;
-    background-position: 0 40%;
+    background-position: top, 0 40%;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../../img/bg-triangle-white-footer.svg"), url("../../img/bg-map-desktop@2x.jpg");

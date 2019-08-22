@@ -27,6 +27,11 @@
     display: none;
   }
 
+  .page-header__menu-container--open {
+    background-color: transparent;
+    margin-bottom: -110px;
+  }
+
   .site-menu--open .page-header__menu-toggle {
     width: 24px;
     height: 23px;
@@ -48,6 +53,23 @@
     align-items: center;
     border-top: 1px solid #485461;
     border-bottom: 1px solid #000000;
+  }
+
+  .site-menu.main-nav--nojs {
+    display: block;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #485461;
+    border-bottom: 1px solid #000000;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .main-nav--nojs .page-header__menu-toggle {
+    display: none;
   }
 }
 
