@@ -13,35 +13,23 @@
 
 .page-header__menu-toggle {
   position: absolute;
-  top: 13px;
-  right: 10px;
-  display: inline-block;
-  padding: 20px 20px;
-  width: 23px;
+  top: 20px;
+  right: 20px;
+  padding: 0;
+  width: 50px;
   height: 24px;
+  background-color: transparent;
+  background-image: url("../../img/icon-menu-burger.svg");
+  background-repeat: no-repeat;
   border: 0;
   font-size: 0;
-  vertical-align: middle;
-  background-color: transparent;
 }
 
-.page-header__menu-toggle::before,
-.page-header__menu-toggle::after {
-  position: absolute;
-  top: 5px;
-  left: 10px;
-  content: "";
-  height: 30px;
-  width: 3px;
-  background-color: #ffffff;
-}
-
-.page-header__menu-toggle::before {
-  transform: rotate(45deg);
-}
-
-.page-header__menu-toggle::after {
-  transform: rotate(-45deg);
+.page-header__menu-container {
+  position: relative;
+  z-index: 1;
+  margin-bottom: -110px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 @media (min-width: @tablet-width) {
@@ -72,12 +60,5 @@
     height: 40px;
     padding-left: 0;
     padding-right: 0;
-  }
-
-  .page-header__menu-container {
-    position: relative;
-    z-index: 1;
-    margin-bottom: -110px;
-    background-color: rgba(0, 0, 0, 0.3);
   }
 }
