@@ -3,6 +3,10 @@ var siteMenu = document.querySelector('.site-menu');
 var navToggle = document.querySelector('.page-header__menu-toggle');
 
 siteMenu.classList.remove('main-nav--nojs');
+siteMenu.classList.remove('site-menu--open');
+siteMenu.classList.add('site-menu--closed');
+pageHeader.classList.remove('page-header__menu-container--open');
+pageHeader.classList.add('page-header__menu-container--closed');
 
 navToggle.addEventListener('click', function() {
     if (siteMenu.classList.contains('site-menu--closed')) {
