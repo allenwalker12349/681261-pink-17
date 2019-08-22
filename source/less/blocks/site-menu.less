@@ -11,6 +11,15 @@
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
+
+  &:hover {
+    color: #d02856;
+  }
+
+  &:active {
+    color: #ffffff;
+    opacity: 0.3;
+  }
 }
 
 @media (max-width: @mobile-width-only) {
@@ -54,6 +63,7 @@
     padding-top: 46px;
     padding-bottom: 46px;
     font-weight: normal;
+    text-transform: none;
   }
 
   .page-header__menu-container .wrapper {
@@ -73,5 +83,9 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+  }
+
+  .site-menu__link--active {
+    border-bottom: 2px solid #ffffff;
   }
 }
