@@ -1,13 +1,63 @@
-.site-logo__link {
-  display: flex;
-  justify-content: center;
-}
+.site-logo {
+  &:focus,
+  &:hover svg g {
+      fill: #d22856;
+    }
 
-.site-logo__pic {
-  display: flex;
+    &:active svg g {
+      fill: #ffffff;
+      opacity: 0.3;
+    }
 }
 
 .site-logo--footer {
-  text-align: center;
-  margin-bottom: 40px;
+  width: 147px;
+  height: 40px;
+
+  &:active svg g {
+    fill: #283645;
+  }
+}
+
+.site-logo svg {
+  width: 75px;
+  height: 22px;
+}
+
+.site-logo__image-tablet {
+  display: none;
+}
+
+.site-logo__image-desktop {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .site-logo svg {
+    width: 147px;
+    height: 40px;
+  }
+
+  .site-logo__image-mobile {
+    display: none;
+  }
+
+  .site-logo__image-tablet {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-logo__image-tablet {
+    display: none;
+  }
+
+  .site-logo__image-desktop {
+    display: flex;
+  }
+
+  .site-logo svg {
+    width: 147px;
+    height: 40px;
+  }
 }
