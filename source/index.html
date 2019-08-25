@@ -121,13 +121,13 @@
             <a class="button download__btn" href="#">Скачать приложение</a>
             <ul class="download__list">
               <li class="download__item">
-                <a class="download__link download__link--appstore" href="#">Скачать из appstore</a>
+                <a class="download__link download__link--appstore" href="https://www.apple.com/ru/itunes/">Скачать из appstore</a>
               </li>
               <li class="download__item">
-                <a class="download__link download__link--playmarket" href="#">Скачать из playmarket</a>
+                <a class="download__link download__link--playmarket" href="https://play.google.com/store">Скачать из playmarket</a>
               </li>
               <li class="download__item">
-                <a class="download__link download__link--widows" href="#">
+                <a class="download__link download__link--windows" href="https://www.microsoft.com/ru-RU/store/apps">
                   Скачать из магазина виндовс, который закрылся вроде как
                 </a>
               </li>
@@ -144,11 +144,11 @@
             Устали от серости мегаполиса?
           </p>
           <p class="promo__text">
-            Нам есть, что вам<br>предложить!
+            Нам есть, что вам предложить!
           </p>
         </div>
         <div class="features__content-container">
-          <div class="features__wrapper wrapper">
+          <div class="wrapper features__wrapper">
             <ul class="features__list">
               <li class="features__item">
                 <img class="features__img" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" alt="Изображение без фильтра">
@@ -179,15 +179,18 @@
       <section class="effect">
         <div class="wrapper effect__wrapper">
           <div class="effect__timer">
-            <svg class="effect__timer-icon" width="300px" height="300px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 298 345.097" enable-background="new 0 0 298 345.097" xml:space="preserve">
-              <path fill="#dedede" d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z"/>
+            <svg class="effect__timer-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 298 345.097" enable-background="new 0 0 298 345.097" xml:space="preserve">
+              <path d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z"/>
             </svg>
+            <div class="effect__timer-border">
+              <span>24</span>
+            </div>
           </div>
           <div class="effect__text-container">
-            <h2 class="effect__title">Эффект на 24 часа!</h2>
+            <h2 class="effect__title">Эффект на&#160;24&#160;часа!</h2>
             <p class="effect__text">
               Британские ученые провели исследования и
-              доказали, что положительный эффект от использования приложения длится
+              доказали, что&#160;положительный эффект от&#160;использования приложения длится
               целые сутки!
             </p>
             <a class="effect__link" href="#">Узнать больше об исследовании</a>
@@ -332,9 +335,11 @@
           <div class="contacts_container">
             <p class="contacts__item">
               <b>Звоните:</b>
-              <span class="contacts__data">
-                +7(812)5556666
-              </span>
+              <a href="tel:+78125556666">
+                <span class="contacts__data">
+                  +7 (812) 555-66-66
+                </span>
+              </a>
             </p>
             <p class="contacts__item contacts__item--email">
               <b>Пишите:</b>
@@ -352,7 +357,9 @@
             </p>
           </div>
         </div>
-        <div class="contacts__map"></div>
+        <div class="contacts__map">
+          <iframe class="contacts__ya-map" src="https://yandex.ru/map-widget/v1/-/CBF9nKAJWA" width="100%" height="320px" frameborder="0" allowfullscreen="true"></iframe>
+        </div>
       </section>
 
     </main>
@@ -429,7 +436,7 @@
       </ul>
       <div class="developed">
         <p class="developed__text">Разработано</p>
-        <a class="developed__link" href="#">
+        <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="developed__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="33px" height="40px">
             <path fill="#d22856" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
           </svg>

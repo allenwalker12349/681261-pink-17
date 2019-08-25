@@ -14,7 +14,7 @@
 
 .features__item {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 36px;
   text-align: center;
 }
 
@@ -27,7 +27,7 @@
 .features__title {
   font-size: 18px;
   line-height: 1em;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .features__text {
@@ -42,13 +42,15 @@
     width: 160px;
     height: 280px;
     margin: 0 auto;
-    background: url("../../img/iphone-screen-mobile@1x.png") no-repeat;
+    background-image: url("../../img/iphone-screen-mobile@1x.png");
+    background-repeat: no-repeat;
   }
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     &::after {
-      background: url("../../img/iphone-screen-mobile@2x.png") no-repeat;
+      background-image: url("../../img/iphone-screen-mobile@2x.png");
       background-size: 160px 320px;
+      background-repeat: no-repeat;
     }
   }
 }
@@ -62,29 +64,42 @@
       content: "";
       display: block;
       width: 268px;
-      height: 461px;
+      height: 479px;
       margin: 0;
       margin-top: auto;
       margin-right: auto;
-      background: url("../../img/iphone-screen-3-tablet@1x.png") no-repeat;
+      background-image: url("../../img/iphone-screen-3-tablet@1x.png");
+      background-repeat: no-repeat;
     }
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       &::after {
-        background: url("../../img/iphone-screen-3-tablet@2x.png") no-repeat;
-        background-size: 268px 461px;
+        background-image: url("../../img/iphone-screen-3-tablet@2x.png");
+        background-repeat: no-repeat;
+        background-size: 268px 479px;
       }
     }
   }
 
   .features__item {
-    width: 300px;
+    width: 307px;
+    margin-top: 19px;
     margin-left: auto;
     text-align: left;
   }
 
   .features__list {
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+
+  .features__title {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .features__text {
+    margin: 0;
   }
 }
 
@@ -99,12 +114,14 @@
 
   .features__list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .features__item {
-    width: 240px;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .features__img {
@@ -112,13 +129,20 @@
   }
 
   .features__title {
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: 25px;
     font-size: 30px;
     text-align: center;
   }
 
+  .features__title:nth-child(2) {
+    display: inline-block;
+    width: 222px;
+    text-align: center;
+  }
+
   .features__text {
+    width: 238px;
     font-size: 18px;
     text-align: center;
   }

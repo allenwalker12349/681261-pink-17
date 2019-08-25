@@ -1,18 +1,25 @@
 .contacts__title {
   display: block;
+  margin: 0;
+  margin-top: 35px;
+  margin-bottom: 30px;
   text-align: center;
   font-size: 24px;
   line-height: 1.3em;
   font-weight: 300;
 }
 
+.contacts_container {
+  padding-top: 5px;
+}
+
 .contacts__item {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .contacts__item b,
-.contacts__item span, {
+.contacts__item span {
   display: block;
   text-align: center;
   font-size: 18px;
@@ -23,6 +30,7 @@
     color: #283645;
     border-bottom: 1px solid #283645;
   }
+
   &:active {
     opacity: 0.3;
   }
@@ -39,11 +47,7 @@
 }
 
 .contacts__map {
-  min-height: 320px;
-  background-image: url("../../img/bg-triangle-white-footer.svg"), url("../../img/bg-map-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: top, bottom;
-  background-size: contain, cover;
+  position: relative;
 }
 
 @media (min-width: @tablet-width) {
@@ -56,23 +60,56 @@
   .contacts__title {
     padding-right: 21px;
     padding-left: 21px;
+    margin-top: 43px;
     font-size: 40px;
   }
 
   .contacts__map {
-    min-height: 520px;
     background-image: url("../../img/bg-triangle-white-footer.svg"), url("../../img/bg-map-tablet@1x.jpg");
     background-size: contain, cover;
     background-repeat: no-repeat;
     background-position: top, 0 72%;
   }
+
+  .contacts__map iframe {
+    height: 375px;
+  }
+
+  .contacts__item b {
+    margin-bottom: 10px;
+  }
+
+  .contacts__item:nth-child(3) {
+    padding-top: 20px;
+  }
+
+  .contacts__item:nth-child(3) .contacts__data {
+    width: 215px;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .contacts__map iframe {
+    height: 520px;
+  }
+
   .contacts__title {
     padding-right: 110px;
     padding-left: 110px;
+    margin-top: 60px;
     font-size: 50px;
+  }
+
+  .contacts__item:nth-child(3) {
+    padding-top: 0;
+  }
+
+  .contacts_container {
+    padding-top: 20px;
+  }
+
+  .contacts__item b {
+    margin-bottom: 30px;
   }
 
   .contacts__item--email {
@@ -80,7 +117,6 @@
   }
 
   .contacts__map {
-    min-height: 520px;
     background-image: url("../../img/bg-triangle-white-footer.svg"), url("../../img/bg-map-desktop@1x.jpg");
     background-size: contain, cover;
     background-repeat: no-repeat;

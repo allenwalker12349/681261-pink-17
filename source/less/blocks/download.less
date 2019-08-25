@@ -1,6 +1,6 @@
 .download {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 35px;
 }
 
 .download__title {
@@ -8,17 +8,17 @@
   text-align: center;
   color: #ffffff;
   font-size: 40px;
-  line-height: 1.5em;
+  line-height: 1.3em;
   font-weight: 300;
 }
 
 .download__btn {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   text-align: center;
   font-size: 18px;
   line-height: 1em;
-  font-weight: bold;
+  font-weight: 700;
 
   &:hover {
     background-color: #ffffff;
@@ -34,7 +34,9 @@
 .download__list {
   .list-normalize;
   display: flex;
+  width: 240px;
   justify-content: space-around;
+  margin: 0 auto;
   margin-bottom: 15px;
 }
 
@@ -51,15 +53,21 @@
 }
 
 .download__link--appstore {
-  background: url("../../img/logo-apple.svg") no-repeat center;
+  background-image: url("../../img/logo-apple.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .download__link--playmarket {
-  background: url("../../img/logo-android.svg") no-repeat center;
+  background-image: url("../../img/logo-android.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.download__link--widows {
-  background: url("../../img/logo-microsoft.svg") no-repeat center;
+.download__link--windows {
+  background-image: url("../../img/logo-microsoft.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .download__text {
@@ -74,6 +82,8 @@
 @media (min-width: @tablet-width) {
   .download {
     width: 300px;
+    padding-bottom: 100px;
+    padding-top: 205px;
   }
 
   .download__text {
@@ -85,15 +95,33 @@
     display: inline-block;
     padding-left: 35px;
     padding-right: 35px;
-    margin-bottom: 55px;
+    margin-bottom: 40px;
+    line-height: 1.1em;
     vertical-align: middle;
   }
 
   .download__btn {
-    margin-bottom: 75px;
+    margin-bottom: 48px;
   }
 
   .download__list {
-    margin-bottom: 60px;
+    width: 215px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download__title {
+    font-size: 50px;
+    line-height: 1.3em;
+  }
+
+  .download {
+    padding-top: 85px;
+    padding-bottom: 0;
+  }
+
+  .download__btn {
+    margin-bottom: 70px;
   }
 }

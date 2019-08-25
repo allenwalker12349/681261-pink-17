@@ -2,10 +2,6 @@
   width: 100%;
 }
 
-.page-header__menu-container {
-  background-color: #283645;
-}
-
 .page-header__pic {
   display: block;
   padding: 23px 20px;
@@ -13,6 +9,7 @@
   &:hover path {
     fill: #d02856;
   }
+
   &:active path {
     fill: #ffffff;
     opacity: 0.3;
@@ -32,6 +29,7 @@
   &:hover path {
     fill: #d02856;
   }
+
   &:active path {
     fill: #d02856;
     opacity: 0.3;
@@ -58,8 +56,12 @@
 }
 
 @media (min-width: @tablet-width) {
+  .page-header__logo svg {
+    padding-bottom: 35px;
+  }
+
   .page-header__menu-toggle {
-    top: 30px;
+    top: 45px;
   }
 
   .page-header__logo {
@@ -76,5 +78,9 @@
   .page-header .wrapper {
     width: 940px;
     margin: 0 auto;
+  }
+
+  .page-header__logo {
+    padding-left: 0;
   }
 }

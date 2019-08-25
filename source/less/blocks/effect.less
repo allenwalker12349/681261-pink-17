@@ -8,39 +8,43 @@
 .effect__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .effect__timer {
   position: relative;
   display: flex;
   width: 240px;
+  min-height: 300px;
   justify-content: center;
   align-items: center;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 70px;
-    box-sizing: border-box;
-    width: 200px;
-    height: 200px;
-    border: 15px solid #d22856;
-    border-radius: 50%;
-  }
+.effect__timer-icon path {
+  fill: #dedede;
+}
 
-  &::after {
-    content: "24";
-    position: absolute;
-    top: 150px;
-    color: #d22856;
-    font-size: 96px;
-    font-weight: bold;
-  }
+.effect__timer-border {
+  position: absolute;
+  top: 67px;
+  left: 23px;
+  box-sizing: border-box;
+  width: 205px;
+  height: 205px;
+  border: 15px solid #d22856;
+  border-radius: 50%;
+}
+
+.effect__timer-border span {
+  position: absolute;
+  top: 69px;
+  left: 31px;
+  font-size: 96px;
+  font-weight: 700;
+  color: #d22856;
 }
 
 .effect__text-container {
-  width: 300px;
+  width: 296px;
 }
 
 .effect__title {
@@ -66,21 +70,74 @@
 
 @media (min-width: @tablet-width) {
   .effect {
+    background-color: #ffffff;
     display: block;
+    padding-top: 45px;
+    padding-bottom: 0;
+  }
+
+  .effect__text-container {
+    padding-top: 55px;
+  }
+
+  .effect__title {
+    margin-bottom: 8px;
+  }
+
+  .effect__timer-icon {
+    width: 238px;
+    height: 276px;
+  }
+
+  .effect__timer {
+    padding-left: 5px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .effect__wrapper {
-    justify-content: flex-start;
-  }
-
-  .effect__timer {
-    width: 300px;
-    margin-right: 120px;
+  .effect {
+    background-color: #f2f2f2;
+    padding-bottom: 67px;
   }
 
   .effect__text-container {
-    width: auto;
+    padding-top: 114px;
+    width: 574px;
+  }
+
+  .effect__title {
+    margin-bottom: 17px;
+  }
+
+  .effect__text {
+    margin-bottom: 32px;
+    font-size: 18px;
+  }
+
+  .effect__timer {
+    padding-top: 20px;
+    width: 300px;
+  }
+
+  .effect__timer-icon {
+    width: 300px;
+    height: 345px;
+  }
+
+  .effect__timer-border {
+    width: 253px;
+    height: 253px;
+    top: 90px;
+    left: 28px;
+  }
+
+  .effect__timer-border span {
+    font-size: 120px;
+    top: 84px;
+    left: 40px;
+  }
+
+  .effect__link {
+    font-size: 18px;
   }
 }
