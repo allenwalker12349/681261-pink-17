@@ -29,15 +29,27 @@
     display: none;
   }
 
+  .site-menu--closed .page-header__cross-btn {
+    display: none;
+  }
+
   .page-header__menu-container--open {
     background-color: transparent;
     margin-bottom: -110px;
   }
 
-  .site-menu--open .page-header__menu-toggle {
+  .site-menu--open .page-header__burger-btn {
+    display: none;
+  }
+
+  .site-menu--closed svg {
+    width: 49px;
+    height: 25px;
+  }
+
+  .site-menu--open svg {
     width: 24px;
     height: 23px;
-    background-image: url("../../img/icon-menu-cross.svg");
   }
 
   .site-menu--open .site-menu__item {

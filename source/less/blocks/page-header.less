@@ -24,13 +24,18 @@
   top: 20px;
   right: 20px;
   padding: 0;
-  width: 50px;
-  height: 24px;
   background-color: transparent;
-  background-image: url("../../img/icon-menu-burger.svg");
-  background-repeat: no-repeat;
   border: 0;
   font-size: 0;
+  cursor: pointer;
+
+  &:hover path {
+    fill: #d02856;
+  }
+  &:active path {
+    fill: #d02856;
+    opacity: 0.3;
+  }
 }
 
 .page-header__menu-container {
@@ -41,10 +46,15 @@
 }
 
 .page-header__logo {
-  display: flex;
+  display: inline-block;
+  vertical-align: middle;
   padding-left: 20px;
   align-items: center;
-  min-height: 66px;
+}
+
+.page-header__logo svg {
+  padding-top: 19px;
+  padding-bottom: 19px;
 }
 
 @media (min-width: @tablet-width) {
@@ -53,6 +63,7 @@
   }
 
   .page-header__logo {
+    display: inline-flex;
     min-height: 110px;
   }
 }

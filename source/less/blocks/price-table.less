@@ -8,7 +8,7 @@
 }
 
 .price-table td,
-th {
+.price-table th {
   width: 25%;
   padding: 17px;
   border: 2px solid #e5e5e5;
@@ -36,60 +36,6 @@ th {
   font-size: 24px;
 }
 
-.price-table__check {
-  position: relative;
-  border: 2px solid #e5e5e5;
-
-  &::after {
-    position: absolute;
-    top: 25px;
-    left: 242px;
-    content: "";
-    width: 30px;
-    height: 4px;
-    background-color: #3dc644;
-    transform: rotate(-45deg);
-  }
-
-  &::before {
-    position: absolute;
-    top: 29px;
-    left: 235px;
-    content: "";
-    width: 15px;
-    height: 4px;
-    background-color: #3dc644;
-    transform: rotate(45deg);
-  }
-}
-
-.price-table__uncheck {
-  position: relative;
-  border: 2px solid #e5e5e5;
-
-  &::after {
-    position: absolute;
-    top: 45%;
-    left: 82%;
-    content: "";
-    width: 33px;
-    height: 4px;
-    background-color: #f25b26;
-    transform: rotate(-45deg);
-  }
-
-  &::before {
-    position: absolute;
-    top: 45%;
-    left: 82%;
-    content: "";
-    width: 33px;
-    height: 4px;
-    background-color: #f25b26;
-    transform: rotate(45deg);
-  }
-}
-
 .price-table__head-line--hit {
   position: relative;
 
@@ -113,11 +59,24 @@ th {
   }
 }
 
+.price-table__icon {
+  float: right;
+  width: 45px;
+  height: 31px;
+}
+
 @media (min-width: @tablet-width) {
   .price-table {
     position: static;
     width: 100%;
     font-size: 14px;
+  }
+
+  .price-table__icon {
+    position: relative;
+    float: none;
+    left: 42%;
+    top: 5px;
   }
 
   .price-table th {
@@ -149,57 +108,7 @@ th {
     padding: 10px;
   }
 
-  .price-table__check {
-    &::after {
-      position: absolute;
-      top: 21px;
-      left: 70px;
-      content: "";
-      width: 30px;
-      height: 4px;
-      background-color: #3dc644;
-      transform: rotate(-45deg);
-    }
-
-    &::before {
-      position: absolute;
-      top: 25px;
-      left: 63px;
-      content: "";
-      width: 15px;
-      height: 4px;
-      background-color: #3dc644;
-      transform: rotate(45deg);
-    }
-  }
-
-  .price-table__uncheck {
-    &::after {
-      top: 45%;
-      left: 40%;
-    }
-
-    &::before {
-      top: 45%;
-      left: 40%;
-    }
-  }
-
   .price-table__hidden-text {
     font-size: 0;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .price-table__check {
-    &::after {
-      top: 21px;
-      left: 104px;
-    }
-
-    &::before {
-      top: 25px;
-      left: 97px;
-    }
   }
 }

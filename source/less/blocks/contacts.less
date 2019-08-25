@@ -39,17 +39,11 @@
 }
 
 .contacts__map {
-  min-height: 200px;
-  background-image: url("../../img/bg-triangle-white-footer.svg"), url("../../img/bg-map-mobile@2x.jpg");
+  min-height: 320px;
+  background-image: url("../../img/bg-triangle-white-footer.svg"), url("../../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
   background-position: top, bottom;
   background-size: contain, cover;
-  background-repeat: no-repeat;
-
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../../img/bg-triangle-white-footer.svg"), url("../../img/bg-map-mobile@2x.jpg");
-    background-position: top, bottom;
-    background-size: contain, cover;
-  }
 }
 
 @media (min-width: @tablet-width) {
@@ -66,17 +60,11 @@
   }
 
   .contacts__map {
-    min-height: 375px;
+    min-height: 520px;
     background-image: url("../../img/bg-triangle-white-footer.svg"), url("../../img/bg-map-tablet@1x.jpg");
-    background-position: top, 0 72%;
     background-size: contain, cover;
     background-repeat: no-repeat;
-
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../../img/bg-triangle-white-footer.svg"), url("../../img/bg-map-tablet@2x.jpg");
-      background-position: top, 0 72%;
-      background-size: contain, cover;
-    }
+    background-position: top, 0 72%;
   }
 }
 
@@ -97,11 +85,5 @@
     background-size: contain, cover;
     background-repeat: no-repeat;
     background-position: top, 0 40%;
-
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../../img/bg-triangle-white-footer.svg"), url("../../img/bg-map-desktop@2x.jpg");
-      background-size: contain, cover;
-      background-position: top, 0 40%;
-    }
   }
 }
