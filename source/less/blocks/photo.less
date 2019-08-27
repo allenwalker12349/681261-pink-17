@@ -74,6 +74,42 @@
     flex-wrap: wrap;
   }
 
+  .photo__pic--day-panoram {
+    width: 100%;
+    min-height: 509px;
+  }
+
+  .photo__description--day-panoram {
+    position: relative;
+  }
+
+  .photo__description--day-panoram .description__like,
+  .photo__description--day-panoram .description__like-amount {
+    position: absolute;
+  }
+
+  .photo__description--day-panoram .description__like {
+    top: 30px;
+    right: 28px;
+  }
+
+  .photo__description--day-panoram .description__like-amount {
+    top: 27px;
+    right: 59px;
+  }
+
+  .photo__item--day-panoram .photo__container {
+    position: relative;
+
+    &::before {
+      top: 60px;
+    }
+
+    &::after {
+      top: 65px;
+    }
+  }
+
   .photo__content-container .photo__item {
     display: flex;
     flex-wrap: wrap;
@@ -81,15 +117,34 @@
   }
 
   .photo__item {
+    flex-direction: column;
     width: 300px;
   }
 
   .photo__description {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
     width: 100%;
     min-height: 155px;
+    padding: 24px 30px 18px 27px;
+  }
+
+  .photo__title {
+    width: 438px;
+    box-sizing: border-box;
+    padding-top: 87px;
+    padding-bottom: 68px;
+    margin: 0 auto;
+    font-size: 18px;
   }
 
   .photo__item--day-panoram {
     width: 100%;
+    margin-bottom: 49px;
+  }
+
+  .photo__description--day-panoram {
+    min-height: 121px;
   }
 }

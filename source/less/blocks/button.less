@@ -52,9 +52,28 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .button--add,
+  .button--cancel {
+    width: 261px;
+    padding: 14px;
+    margin-bottom: 25px;
+    font-family: inherit;
+    text-transform: none;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .button--cancel {
+    margin-bottom: 0;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .button--add,
   .button--cancel {
+    font-family: inherit;
     width: 180px;
+    font-weight: 700;
   }
 }

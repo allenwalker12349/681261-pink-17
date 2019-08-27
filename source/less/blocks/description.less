@@ -20,3 +20,27 @@
   fill: #d22856;
   cursor: pointer;
 }
+
+@media (min-width: @tablet-width) {
+  .description__text {
+    width: 100%;
+    margin: 0;
+  }
+
+  .description__time-ago {
+    margin-left: 4px;
+  }
+
+  .description__like-amount {
+    padding-left: 0;
+  }
+
+  .description__like-container {
+    display: flex;
+    align-items: baseline;
+    margin-top: auto;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+}

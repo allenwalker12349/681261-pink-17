@@ -46,12 +46,24 @@
   }
 
   .range-control {
-    top: 35px;
+    top: 10px;
     left: 50px;
   }
 
   .range-control--crop {
     top: inherit;
+  }
+
+  .range-control--crop .range-control__bar::after {
+    left: 150px;
+  }
+
+  .range-control--fill .range-control__bar::after {
+    left: 30px;
+  }
+
+  .range-control--contrast .range-control__bar::after {
+    left: 100px;
   }
 
   .range-control--fill {
