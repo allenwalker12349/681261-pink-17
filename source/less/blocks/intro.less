@@ -47,7 +47,7 @@
   }
 
   .intro--photo {
-    display: flex;
+    display: block;
     align-items: center;
     min-height: 440px;
     background: url("../../img/bg-back-tablet@1x.jpg") no-repeat, #1d2631;
@@ -57,6 +57,10 @@
       background: url("../../img/bg-back-tablet@2x.jpg") no-repeat, #1d2631;
       background-size: 1200px auto;
     }
+  }
+
+  .intro--photo .wrapper {
+    padding-top: 180px;
   }
 }
 
@@ -83,6 +87,8 @@
   }
 
   .intro--photo {
+    display: block;
+    min-height: 395px;
     background-image: url("../../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -93,5 +99,9 @@
       background-size: cover;
       background-position: center;
     }
+  }
+
+  .intro--photo .wrapper {
+    padding-top: 175px;
   }
 }

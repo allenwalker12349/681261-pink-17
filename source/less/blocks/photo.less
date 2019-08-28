@@ -148,3 +148,30 @@
     min-height: 121px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .photo__title {
+    width: 571px;
+    padding-bottom: 79px;
+  }
+
+  .photo__item--day-panoram .photo__container {
+
+    &::before {
+      top: 55px;
+      right: 130px;
+    }
+    &::after {
+      top: 60px;
+      right: 150px;
+    }
+  }
+
+  .photo__description--day-panoram {
+    min-height: 93px;
+  }
+
+  .photo__item {
+    margin-bottom: 50px;
+  }
+}
