@@ -263,6 +263,7 @@
   .competision-form__flex-container {
     width: auto;
     margin: 0;
+    padding: 0;
   }
 
   .competision-form__fieldset,
@@ -311,7 +312,9 @@
 
   .competision-form__item {
     flex-direction: row;
-    align-items: stretch;
+    align-items: center;
+    margin-top: 6px;
+    margin-bottom: 52px;
   }
 
   .competision-form__input {
@@ -321,6 +324,7 @@
 
   .competision-form__item--contacts {
     flex-direction: column;
+    margin-bottom: 40px;
   }
 
   .competision-form__item--contacts .competision-form__input {
@@ -329,6 +333,106 @@
 
   .competision-form__item--contacts .competision-form__label {
     order: 2;
+  }
+
+  .competision-form__label {
+    padding-left: 0;
+    line-height: 1em;
+  }
+
+  .competision-form__label--tablet {
+    padding-top: 16px;
+    padding-left: 18px;
+  }
+
+  .competision-form__fieldset--apps {
+    padding: 0;
+  }
+
+  .competision-form__list--app {
+    padding: 52px 0;
+    padding-left: 50px;
+  }
+
+  .competision-form__list-item {
+    margin-bottom: 45px;
+  }
+
+  .competision-form__legend {
+    padding-bottom: 4px;
+  }
+
+  .competision-form__input--strech {
+    align-items: stretch;
+  }
+
+  .competision-form__input--no-margin {
+    margin: 0;
+  }
+
+  .competision-form__fieldset--phone {
+    margin-top: 45px;
+    margin-bottom: 55px;
+    padding-bottom: 0;
+    padding-top: 30px;
+  }
+
+  .competision-form__title--check {
+    padding-left: 58px;
+  }
+
+  .competision-form__fieldset--achive {
+    padding-top: 44px;
+    margin-bottom: 57px;
+    padding-bottom: 0;
+  }
+
+  .competision-form__list--achive {
+    padding-bottom: 0;
+  }
+
+  .competision-form__list--achive .competision-form__list-item {
+    margin-bottom: 52px;
+  }
+
+  .competision-form__title--check {
+
+    &::before {
+      top: -7px;
+      left: -1px;
+    }
+  }
+
+  .competision-form__check-input:checked + .competision-form__title--check::after {
+    top: 3px;
+    left: 6px;
+  }
+
+  .competision-form__fieldset--emotions {
+    padding: 0;
+    padding: 35px 55px 53px;
+    margin-bottom: 65px;
+  }
+
+  .competision-form__fieldset--emotions .competition-form__textarea {
+    padding: 20px;
+    padding-top: 15px;
+  }
+
+  .competision-form__fieldset--emotions .competision-form__fieldset--personal {
+    padding-bottom: 1px;
+  }
+
+  .competition-form__info {
+    margin-top: 21px;
+  }
+
+  .competition-form__submit-btn {
+    width: 300px;
+  }
+
+  .competision-form__btn-container {
+    margin-bottom: 50px;
   }
 }
 

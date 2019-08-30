@@ -72,6 +72,10 @@
   width: 100%;
 }
 
+.photo__title--mobile-hidden {
+  visibility: hidden;
+}
+
 @media (min-width: @tablet-width) {
   .photo__content-container {
     display: flex;
@@ -138,7 +142,7 @@
   .photo__title {
     width: 438px;
     box-sizing: border-box;
-    padding-top: 87px;
+    padding-top: 90px;
     padding-bottom: 68px;
     margin: 0 auto;
     font-size: 18px;
@@ -151,6 +155,15 @@
 
   .photo__description--day-panoram {
     min-height: 121px;
+  }
+
+  .photo__title--competision {
+    width: 490px;
+    line-height: 1.67;
+  }
+
+  .photo__title--mobile-hidden {
+    visibility: visible;
   }
 }
 
