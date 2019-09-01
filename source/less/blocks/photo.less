@@ -1,17 +1,18 @@
 .photo__title {
-  margin-top: 52px;
+  margin-top: 50px;
   margin-bottom: 50px;
   padding: 0 35px;
   text-align: center;
   color: #283645;
   font-size: 14px;
-  line-height: 2em;
+  line-height: 2.1em;
   font-weight: 400;
 }
 
 .photo__title--competision {
-  margin-top: 48px;
-  margin-bottom: 41px;
+  margin-top: 49px;
+  margin-bottom: 11px;
+  padding: 0;
 }
 
 .photo__item {
@@ -89,11 +90,6 @@
     min-height: 509px;
   }
 
-  .photo__description--day-panoram {
-    position: relative;
-    min-height: 121px;
-  }
-
   .photo__description--day-panoram .description__like,
   .photo__description--day-panoram .description__like-amount {
     position: absolute;
@@ -138,37 +134,50 @@
     flex-grow: 1;
     width: 100%;
     min-height: 155px;
-    padding: 24px 30px 18px 27px;
+    padding: 24px 30px 18px 29px;
   }
 
   .photo__title {
-    width: 438px;
+    width: 510px;
     box-sizing: border-box;
     padding-top: 90px;
-    padding-bottom: 68px;
+    padding-bottom: 77px;
     margin: 0 auto;
     font-size: 18px;
+    line-height: 1.67em;
   }
 
   .photo__item--day-panoram {
     width: 100%;
-    margin-bottom: 49px;
+    margin-bottom: 57px;
   }
 
   .photo__title--competision {
     width: 490px;
+    padding-top: 94px;
+    padding-bottom: 72px;
     line-height: 1.67;
   }
 
   .photo__title--mobile-hidden {
     visibility: visible;
   }
+
+  .photo__description--day-panoram {
+    position: relative;
+    min-height: 113px;
+    line-height: 1.67em;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .photo__title {
-    width: 571px;
-    padding-bottom: 79px;
+    width: 643px;
+    padding-bottom: 76px;
+  }
+
+  .photo__title--photo {
+    padding-bottom: 90px;
   }
 
   .photo__item--day-panoram .photo__container {
@@ -192,6 +201,6 @@
   }
 
   .photo__title--competision {
-    width: 752px;
+    width: 756px;
   }
 }

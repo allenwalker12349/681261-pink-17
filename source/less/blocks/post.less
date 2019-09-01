@@ -1,6 +1,7 @@
 .post__title {
   margin-top: 45px;
   margin-bottom: 45px;
+  padding: 0 33px;
 }
 
 .post__container {
@@ -56,7 +57,7 @@
 
 .post__btn-container {
   width: 100%;
-  padding-top: 115px;
+  padding-top: 107px;
 }
 
 @media (min-width: @tablet-width) {
@@ -67,7 +68,7 @@
   .post__title {
     padding: 0;
     margin-top: 45px;
-    margin-bottom: 60px;
+    margin-bottom: 69px;
   }
 
   .post__icon path:not(:first-child),
@@ -108,8 +109,11 @@
   }
 
   .post__icon {
+    position: relative;
+    top: 3px;
     width: 22px;
     height: 22px;
+    padding-left: 4px;
   }
 
   .post__icon--contrast {
@@ -133,12 +137,13 @@
   .post__btn-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 138px;
+    margin-top: 132px;
   }
 
   .post__icon {
-    width: 44px;
-    height: 44px;
+    width: 46px;
+    height: 48px;
+    padding: 0;
   }
 
   .post__icon--contrast {
@@ -148,7 +153,8 @@
   }
 
   .post__title {
-    margin-top: 10px;
+    margin-top: 11px;
+    margin-bottom: 65px;
   }
 
   .post__container {
@@ -167,5 +173,13 @@
   .post__control-item {
     padding-bottom: 13px;
     margin-bottom: 15px;
+  }
+
+  .range-control--crop .range-control__bar {
+    top: 4px;
+  }
+
+  .range-control--contrast .range-control__bar {
+    top: -6px;
   }
 }
